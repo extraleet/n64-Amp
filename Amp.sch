@@ -1,0 +1,466 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Amp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_02x06_Odd_Even J1
+U 1 1 5A208CFA
+P 2900 2800
+F 0 "J1" H 2950 3100 50  0000 C CNN
+F 1 "MultiAV" H 2950 2400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 2900 2800 50  0001 C CNN
+F 3 "" H 2900 2800 50  0001 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 2800 0    60   Input ~ 0
+GND_EXT1
+Text GLabel 3200 3000 2    60   Input ~ 0
++5V
+Text GLabel 2700 2600 0    60   Input ~ 0
+R_OUT
+Text GLabel 3200 2600 2    60   Input ~ 0
+G_OUT
+Text GLabel 3200 2700 2    60   Input ~ 0
+B_OUT
+Text GLabel 2700 2700 0    60   Input ~ 0
+CS*
+Text GLabel 3200 3100 2    60   Input ~ 0
+R
+Text GLabel 2700 3100 0    60   Input ~ 0
+L
+Text GLabel 2700 2900 0    60   Input ~ 0
+Luma
+Text GLabel 3200 2900 2    60   Input ~ 0
+Chroma
+Text GLabel 3200 2800 2    60   Input ~ 0
+GND_EXT2
+Text GLabel 5600 1050 0    60   Input ~ 0
+CVIDEO_OUT
+Text GLabel 6700 1450 2    60   Input ~ 0
+R_OUT
+Text GLabel 5800 1950 2    60   Input ~ 0
+CVIDEO_OUT
+$Comp
+L THS7374 U1
+U 1 1 5A20BA73
+P 5300 1450
+F 0 "U1" H 5200 1400 60  0000 C CNN
+F 1 "THS7374" H 5200 500 60  0000 C CNN
+F 2 "SMD_Packages:SSOP-14" H 5200 1400 60  0001 C CNN
+F 3 "" H 5200 1400 60  0001 C CNN
+	1    5300 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 1600 2    60   Input ~ 0
+G_OUT
+Text GLabel 6700 1750 2    60   Input ~ 0
+B_OUT
+$Comp
+L CP C1
+U 1 1 5A20CE4B
+P 5800 1050
+F 0 "C1" H 5825 1150 50  0000 L CNN
+F 1 "330uF" H 5825 950 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31_Reflow" H 5838 900 50  0001 C CNN
+F 3 "" H 5800 1050 50  0001 C CNN
+	1    5800 1050
+	0    -1   1    0   
+$EndComp
+Text GLabel 2700 3000 0    60   Input ~ 0
+CVIDEO_EXT
+Text GLabel 6600 1050 2    60   Input ~ 0
+CVIDEO_EXT
+$Comp
+L R R3
+U 1 1 5A20D025
+P 6200 1050
+F 0 "R3" V 6280 1050 50  0000 C CNN
+F 1 "75" V 6200 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6130 1050 50  0001 C CNN
+F 3 "" H 6200 1050 50  0001 C CNN
+	1    6200 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 5A20D15C
+P 6350 1450
+F 0 "R8" V 6430 1450 50  0000 C CNN
+F 1 "75" V 6350 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6280 1450 50  0001 C CNN
+F 3 "" H 6350 1450 50  0001 C CNN
+	1    6350 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5A20D19B
+P 6350 1600
+F 0 "R9" V 6430 1600 50  0000 C CNN
+F 1 "75" V 6350 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6280 1600 50  0001 C CNN
+F 3 "" H 6350 1600 50  0001 C CNN
+	1    6350 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 5A20D1DE
+P 6350 1750
+F 0 "R10" V 6430 1750 50  0000 C CNN
+F 1 "75" V 6350 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6280 1750 50  0001 C CNN
+F 3 "" H 6350 1750 50  0001 C CNN
+	1    6350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A20DF12
+P 4000 1150
+F 0 "R4" V 4080 1150 50  0000 C CNN
+F 1 "75" V 4000 1150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3930 1150 50  0001 C CNN
+F 3 "" H 4000 1150 50  0001 C CNN
+	1    4000 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 5A20DF18
+P 4200 1150
+F 0 "R5" V 4280 1150 50  0000 C CNN
+F 1 "75" V 4200 1150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4130 1150 50  0001 C CNN
+F 3 "" H 4200 1150 50  0001 C CNN
+	1    4200 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 5A20DF1E
+P 4400 1150
+F 0 "R6" V 4480 1150 50  0000 C CNN
+F 1 "75" V 4400 1150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 1150 50  0001 C CNN
+F 3 "" H 4400 1150 50  0001 C CNN
+	1    4400 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 5A20EE56
+P 6200 2150
+F 0 "R7" V 6280 2150 50  0000 C CNN
+F 1 "4k7" V 6200 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6130 2150 50  0001 C CNN
+F 3 "" H 6200 2150 50  0001 C CNN
+	1    6200 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A20F2BA
+P 4150 1950
+F 0 "R2" V 4230 1950 50  0000 C CNN
+F 1 "4k7" V 4150 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4080 1950 50  0001 C CNN
+F 3 "" H 4150 1950 50  0001 C CNN
+	1    4150 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A20F39C
+P 3950 2150
+F 0 "R1" V 4030 2150 50  0000 C CNN
+F 1 "475" V 3950 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3880 2150 50  0001 C CNN
+F 3 "" H 3950 2150 50  0001 C CNN
+	1    3950 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5A21104F
+P 4300 2550
+F 0 "J6" H 4300 2650 50  0000 C CNN
+F 1 "GND" H 4300 2450 50  0000 C CNN
+F 2 ".pretty:SMD_PAD_2x4" H 4300 2550 50  0001 C CNN
+F 3 "" H 4300 2550 50  0001 C CNN
+	1    4300 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J7
+U 1 1 5A2110B0
+P 6600 2900
+F 0 "J7" H 6600 3000 50  0000 C CNN
+F 1 "+5V" H 6600 2800 50  0000 C CNN
+F 2 ".pretty:SMD_PAD_2x4" H 6600 2900 50  0001 C CNN
+F 3 "" H 6600 2900 50  0001 C CNN
+	1    6600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 5A212A7A
+P 3600 1450
+F 0 "J3" H 3600 1550 50  0000 C CNN
+F 1 "R" H 3600 1350 50  0000 C CNN
+F 2 ".pretty:SMD_PAD_2x4" H 3600 1450 50  0001 C CNN
+F 3 "" H 3600 1450 50  0001 C CNN
+	1    3600 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J4
+U 1 1 5A212B70
+P 3750 1600
+F 0 "J4" H 3750 1700 50  0000 C CNN
+F 1 "G" H 3750 1500 50  0000 C CNN
+F 2 ".pretty:SMD_PAD_2x4" H 3750 1600 50  0001 C CNN
+F 3 "" H 3750 1600 50  0001 C CNN
+	1    3750 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5A212BB9
+P 3900 1750
+F 0 "J5" H 3900 1850 50  0000 C CNN
+F 1 "B" H 3900 1650 50  0000 C CNN
+F 2 ".pretty:SMD_PAD_2x4" H 3900 1750 50  0001 C CNN
+F 3 "" H 3900 1750 50  0001 C CNN
+	1    3900 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J2
+U 1 1 5A214CB7
+P 3400 1950
+F 0 "J2" H 3400 2050 50  0000 C CNN
+F 1 "CS" H 3400 1850 50  0000 C CNN
+F 2 ".pretty:SMD_PAD_2x4" H 3400 1950 50  0001 C CNN
+F 3 "" H 3400 1950 50  0001 C CNN
+	1    3400 1950
+	-1   0    0    1   
+$EndComp
+Text Label 4450 2050 0    60   ~ 0
+GND
+Text GLabel 3950 2450 0    60   Input ~ 0
+GND
+Text GLabel 3900 950  0    60   Input ~ 0
+GND
+Wire Wire Line
+	6500 1450 6700 1450
+Wire Wire Line
+	6700 1600 6500 1600
+Wire Wire Line
+	6500 1750 6700 1750
+Wire Wire Line
+	5800 1850 6200 1850
+Wire Wire Line
+	6200 1850 6200 1750
+Wire Wire Line
+	5800 1750 6150 1750
+Wire Wire Line
+	6150 1750 6150 1600
+Wire Wire Line
+	6150 1600 6200 1600
+Wire Wire Line
+	5800 1650 6100 1650
+Wire Wire Line
+	6100 1650 6100 1450
+Wire Wire Line
+	6100 1450 6200 1450
+Wire Wire Line
+	4650 1850 4450 1850
+Wire Wire Line
+	4450 1850 4450 1750
+Wire Wire Line
+	4650 1750 4500 1750
+Wire Wire Line
+	4500 1750 4500 1600
+Wire Wire Line
+	4500 1600 3950 1600
+Wire Wire Line
+	4650 1650 4550 1650
+Wire Wire Line
+	4550 1650 4550 1450
+Wire Wire Line
+	4550 1450 3800 1450
+Wire Wire Line
+	5800 2050 6950 2050
+Wire Wire Line
+	5800 2150 6050 2150
+Connection ~ 6350 2050
+Wire Wire Line
+	3950 2000 3950 1950
+Wire Wire Line
+	3600 1950 4000 1950
+Connection ~ 3950 1950
+Wire Wire Line
+	4300 1950 4650 1950
+Wire Wire Line
+	4300 2300 3950 2300
+Wire Wire Line
+	4450 1750 4100 1750
+Wire Wire Line
+	6350 1050 6600 1050
+Wire Wire Line
+	6050 1050 5950 1050
+Wire Wire Line
+	5600 1050 5650 1050
+Wire Wire Line
+	4200 1300 4200 1600
+Connection ~ 4200 1600
+Wire Wire Line
+	4000 1300 4000 1450
+Connection ~ 4000 1450
+Wire Wire Line
+	4400 1300 4400 1750
+Connection ~ 4400 1750
+Wire Wire Line
+	4000 1000 4000 950 
+Wire Wire Line
+	3900 950  4400 950 
+Wire Wire Line
+	4400 950  4400 1000
+Wire Wire Line
+	4200 1000 4200 950 
+Connection ~ 4200 950 
+Wire Wire Line
+	3950 2450 4050 2450
+Wire Wire Line
+	4050 2450 4050 2300
+Connection ~ 4050 2300
+Connection ~ 4000 950 
+Wire Wire Line
+	4300 2150 4650 2150
+Wire Wire Line
+	4650 2050 4300 2050
+Wire Wire Line
+	4300 2050 4300 2350
+Connection ~ 4300 2300
+Connection ~ 4300 2150
+Text GLabel 6450 2450 0    60   Input ~ 0
+GND
+$Comp
+L C_Small C2
+U 1 1 5A21F0D4
+P 6500 2200
+F 0 "C2" H 6510 2270 50  0000 L CNN
+F 1 "100nF" H 6510 2120 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6500 2200 50  0001 C CNN
+F 3 "" H 6500 2200 50  0001 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5A21F137
+P 6800 2200
+F 0 "C3" H 6810 2270 50  0000 L CNN
+F 1 "22uF" H 6810 2120 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6800 2200 50  0001 C CNN
+F 3 "" H 6800 2200 50  0001 C CNN
+	1    6800 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2100 6500 2050
+Connection ~ 6500 2050
+Wire Wire Line
+	6800 2100 6800 2050
+Connection ~ 6800 2050
+Wire Wire Line
+	6450 2450 6800 2450
+Wire Wire Line
+	6500 2300 6500 2600
+Wire Wire Line
+	6800 2450 6800 2300
+Connection ~ 6500 2450
+$Comp
+L GS2 J8
+U 1 1 5A220337
+P 6000 2400
+F 0 "J8" H 5900 2500 50  0000 C CNN
+F 1 "GS2" H 5850 2400 50  0000 C CNN
+F 2 "Connect:GS2" V 6074 2400 50  0001 C CNN
+F 3 "" H 6000 2400 50  0001 C CNN
+	1    6000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2150 6350 2050
+Wire Wire Line
+	6000 2200 6000 2150
+Connection ~ 6000 2150
+Wire Wire Line
+	6500 2600 6000 2600
+Text GLabel 5150 2900 2    60   Input ~ 0
+GND_EXT2
+Text GLabel 5150 3050 2    60   Input ~ 0
+GND_EXT1
+Text GLabel 4950 2900 0    60   Input ~ 0
+GND
+Wire Wire Line
+	4950 2900 5150 2900
+Wire Wire Line
+	5150 3050 5050 3050
+Wire Wire Line
+	5050 3050 5050 2900
+Connection ~ 5050 2900
+Text GLabel 6950 2050 2    60   Input ~ 0
++5V
+Text GLabel 6350 2900 0    60   Input ~ 0
++5V
+Wire Wire Line
+	6350 2900 6400 2900
+$EndSCHEMATC
